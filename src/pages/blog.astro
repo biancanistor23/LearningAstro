@@ -1,7 +1,15 @@
 ---
-import Blog from '../components/Blog.astro';
-import Header from '../layouts/Header.astro';
+import "../styles/global.css";
+
+import Blog from "../components/Blog.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
-<Header>
-</Header>   
-<Blog/>
+
+<Header />
+<Blog />
+<Footer />
+<script>
+  import "../scripts/menu.js";
+</script>

@@ -1,0 +1,16 @@
+---
+import "../styles/global.css";
+
+const { platform, username } = Astro.props;
+---
+
+<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+
+<style>
+  a {
+    padding: 0.5 rem 1 rem;
+    color: maroon;
+    background-color: rgb(232, 126, 126);
+    text-decoration: wavy;
+  }
+</style>
