@@ -2,17 +2,13 @@
 import "../styles/global.css";
 
 import About from "../components/About.astro";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 import "../styles/global.css";
-import Header from "../components/Header.astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+const pageTitle = "About";
 ---
 
-<Header />
-<About />
-<Footer />
-<script>
-  import "../scripts/menu.js";
-</script>
+<BaseLayout pageTitle={pageTitle}>
+  <About />
+</BaseLayout>
